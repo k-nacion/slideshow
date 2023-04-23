@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #281c28;
+    color: #e7d0b3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #e14647;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: rgba(231, 208, 179, 0.2);
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.branding h1 {
+    font-family: 'Pilcrow Rounded', sans-serif;
+    margin-bottom: 0;
+}
+
+.branding p {
+    margin-top: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: #e7d0b3;
+    text-decoration: none;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 1500ms;
+}
+
+nav a::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    background-color: rgba(231, 208, 179, 0.2);
+    transition: all 500ms;
+}
+
+nav a:hover::after {
+    width: 20%;
+}
+
+nav a::before {
+    content: "";
+    height: 15px;
+    width: 0;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    background-color: rgba(231, 208, 179, 0.2);
+    transition: all 500ms;
+}
+
+nav a:hover::before {
+    width: 20%;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container .main-area {
+    flex-basis: 65%;
+}
+
+
+.banner-container {
+    position: relative;
+}
+
+.banner-container .banner-image{
+    width: 100%;
+}
+.banner-description {
+    background-color: rgba(40, 28, 40, .8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 40px 20px;
+}
+
+.banner-description h2, .banner-description p {
+    margin: 0;
+}
+
+.main-container .sidebar {
+    flex-basis: 30%;
+}
+
+footer {
+    background-color: #e7d0b3;
+    color: #e14647;
+    width: 100%;
+    margin-top: 40px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+footer .icons {
+    display: flex;
+    gap: 10px;
+}
+
+footer .icons i {
+    cursor: pointer;
+}
+
